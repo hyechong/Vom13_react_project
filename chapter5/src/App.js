@@ -6,6 +6,11 @@ import ConditionalRendering from './components/ConditionalRendering';
 import Properties from './components/Properties';
 import ChildCompProps from './components/ChildCompProps';
 import AlertEvent from './components/AlertEvent';
+import ObjectEvent from './components/ObjectEvent';
+import StateComponent from './components/StateComponent';
+import ChangeText from './components/ChangeText';
+import MultiUserInput from './components/MultiUserInput';
+import UseRef from './components/UseRef';
 
 const ChildComp = () => {
   return <div>Child Component</div>;
@@ -31,7 +36,12 @@ function App() {
       {/* <ChildCompProps>
         <ChildComp />
       </ChildCompProps> */}
-      <AlertEvent />
+      {/* <AlertEvent /> */}
+      {/* <ObjectEvent /> */}
+      {/* <StateComponent /> */}
+      {/* <ChangeText /> */}
+      {/* <MultiUserInput /> */}
+      <UseRef />
       <Footer />
     </div>
   );
