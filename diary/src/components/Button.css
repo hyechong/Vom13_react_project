@@ -1,0 +1,28 @@
+.Button{
+  cursor: pointer;
+  border:none;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 18px;
+  white-space: nowrap;
+  font-family: 'Noto Serif', serif;
+  font-family: 'Noto Serif KR', serif;
+}
+
+.Button_default{
+  background-color: #ececec;
+  color: #666;
+}
+
+.Button_positive{
+  background-color: #95b380;
+  color: #fff;
+}
+
+.Button_negative{
+  background-color: rgb(226, 136, 136);
+  color: #fff;
+}
