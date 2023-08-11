@@ -24,7 +24,7 @@ export const getEmotionImgByID = (emotionId) => {
 
 export const getFormattedDate = (targetDate) => {
   let year = targetDate.getFullYear();
-  let month = targetDate.getMonth();
+  let month = targetDate.getMonth() + 1;
   let date = targetDate.getDate();
   if (month < 10) {
     month = `0${month}`;
@@ -38,7 +38,7 @@ export const getFormattedDate = (targetDate) => {
 export const emotionList = [
   {
     id: 1,
-    name: '완전좋음',
+    name: '완전 좋음',
     img: getEmotionImgByID(1),
   },
   {
@@ -62,3 +62,20 @@ export const emotionList = [
     img: getEmotionImgByID(5),
   },
 ];
+
+export const getMonthRangeByDate = (date) => {
+  const beginTimeStamp = new Date(
+    date.getFullYear(),
+    date.getMonth(),
+    1
+  ).getTime();
+  const endTimeStamp = new Date(
+    date.getFullYear(),
+    date.getMonth() + 1,
+    0,
+    23,
+    59,
+    59
+  ).getTime();
+  return { beginTimeStamp, endTimeStamp };
+};

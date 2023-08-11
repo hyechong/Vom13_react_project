@@ -14,13 +14,13 @@
   border-radius: 5px;
   background-color: #ececec;
   padding: 20px;
-  font-size: 20px;
+  font-size: 16px;
   font-family: 'Noto Serif', serif;
   font-family: 'Noto Serif KR', serif;
 }
 
 .Editor input{
-  padding:10px 0;
+  padding:10px 20px;
   cursor: pointer;
 }
 
